@@ -5,32 +5,277 @@
     <title>Jetto</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
-    <script>
-        src="jquery-3.1.1.min.js"
-    </script>
-    <script> src="bootstrap.min.js"</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
 
 </head>
 <body>
+    <h1>Jetro</h1>
+        <!--Nav menu + logo-->
+    <header> 
 
-    <div class="container">
+            <!--Nav bar-->
+            <nav class="navbar navbar-default">
+            <div class="container">
+
+                <!--LOGO-->
+                <h1><a class="navbar-brand" href="#">Jet<span>ro</span> </a></h1>
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+
+                    <li><a href="#">About us</a></li>
+
+                    <li><a href="#">Blog</a></li>
+
+                    <li><a href="#">Portfolio</a></li>
+
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            </div>
+            </nav>
+    
+            <!--Side-stripes-->
+            <section class="container-fluid">
+                <div id="side-stripes"></div>
+
+                    <div class="container">
+                        <h1>Slider</h1>
+                        <!-- Slides -->
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="item active">
+                            <img src="images/slider1.jpg" alt="...">
+                            <section class="carousel-caption">
+                                <h1>Slide 1</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quas doloribus 
+                                    ratione labore explicabo amet doloremque iste voluptatibus, unde quidem sapiente 
+                                    natus quaerat animi facere tempora ipsa et quibusdam officia.</p>
+                            </section>
+                            </div>
+
+                            <div class="item">
+                            <img src="images/slider2.jpg" alt="...">
+                            <section class="carousel-caption">
+                                    <h1>Slide 2</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quas doloribus 
+                                    ratione labore explicabo amet doloremque iste voluptatibus, unde quidem sapiente 
+                                    natus quaerat animi facere tempora ipsa et quibusdam officia.</p>
+                            </section>
+                            </div>
+
+                            <div class="item">
+                            <img src="images/slider1.jpg" alt="...">
+                            <section class="carousel-caption">
+                                <h1>Slide 3</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quas doloribus 
+                                    ratione labore explicabo amet doloremque iste voluptatibus, unde quidem sapiente 
+                                    natus quaerat animi facere tempora ipsa et quibusdam officia.</p>
+                            </section>
+                            </div>
+                            <div class="item">
+                            <img src="images/slider2.jpg" alt="...">
+                            <section class="carousel-caption">
+                                    <h1>Slide 4</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quas doloribus 
+                                    ratione labore explicabo amet doloremque iste voluptatibus, unde quidem sapiente 
+                                    natus quaerat animi facere tempora ipsa et quibusdam officia.</p>
+                            </section>
+                            </div>
+
+                            <div class="item">
+                            <img src="images/slider1.jpg" alt="...">
+                            <section class="carousel-caption">
+                                <h1>Slide 5</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quas doloribus 
+                                    ratione labore explicabo amet doloremque iste voluptatibus, unde quidem sapiente 
+                                    natus quaerat animi facere tempora ipsa et quibusdam officia.</p>
+                            </section>
+                            </div>
+                            <div class="item">
+                            <img src="images/slider2.jpg" alt="...">
+                            <section class="carousel-caption">
+                                    <h1>Slide 6</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quas doloribus 
+                                    ratione labore explicabo amet doloremque iste voluptatibus, unde quidem sapiente 
+                                    natus quaerat animi facere tempora ipsa et quibusdam officia.</p>
+                            </section>
+                            </div>
+                            
+                        </div>
+
+                        <!--Thumbnails-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active">
+                                    <img src="images/thumb1.jpg" alt="">
+                                </li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1">
+                                    <img src="images/thumb2.jpg" alt="">
+                                </li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2">
+                                    <img src="images/thumb1.jpg" alt="">
+                                </li>
+                                <li data-target="#carousel-example-generic" data-slide-to="3">
+                                    <img src="images/thumb2.jpg" alt="">
+                                </li>
+                                 <li data-target="#carousel-example-generic" data-slide-to="4">
+                                    <img src="images/thumb1.jpg" alt="">
+                                </li>
+                                <li data-target="#carousel-example-generic" data-slide-to="5">
+                                    <img src="images/thumb2.jpg" alt="">
+                                </li>
+                            </ol>
+
+                        <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon">
+                                    <img src="images/previous.png" alt="">
+                                </span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon">
+                                    <img src="images/next.png" alt="">
+                                </span>
+                            </a>
+                    </div>
+                </div>  
+              </section> 
+    </header>
+
+
+    <!--INTRO ARTICLES-->
+    <section class="container">
+        <h1>Intro Articles</h1>
+        <div class="row">
+            <article class="col-lg-4">
+                <h1>Article</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Accusantium est quasi maxime, incidunt sed accusamus, dicta eius voluptatum ipsam 
+                    cum numquam impedit, corporis! Magnam, quaerat earum voluptates autem dolorem facere.</p>
+
+                <button>More</button>    
+            </article>
+
+            <article class="col-lg-4">
+                <h1>Article</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Accusantium est quasi maxime, incidunt sed accusamus, dicta eius voluptatum ipsam 
+                    cum numquam impedit, corporis! Magnam, quaerat earum voluptates autem dolorem facere.</p>
+
+                <button>More</button>    
+            </article>
+
+            <article class="col-lg-4">
+                <h1>Article</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Accusantium est quasi maxime, incidunt sed accusamus, dicta eius voluptatum ipsam 
+                    cum numquam impedit, corporis! Magnam, quaerat earum voluptates autem dolorem facere.</p>
+
+                <button>More</button>    
+            </article>
+
+            <article class="col-lg-4">
+                <h1>Article</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Accusantium est quasi maxime, incidunt sed accusamus, dicta eius voluptatum ipsam 
+                    cum numquam impedit, corporis! Magnam, quaerat earum voluptates autem dolorem facere.</p>
+
+                <button>More</button>    
+            </article>
+        </div>
+
         
-        <footer>
-            <h2>
+    </section>
 
-                BRANCH3
+    <!--RECENT WORKS-->
+        <div>
+            <h1></h1>
+        </div>
 
-            </h2>
+        <aside class="container">
 
-          
+            <h1>Recent works</h1>
 
-            
+            <div class="row">
+                <section class="col-lg-3">
+                    <div>
+                        <img src="images/recent1.jpg" alt="">
+                        <div>
+                            <h1>Header</h1>
+                            <p>Loremdfdf</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-3">
+                    <div>
+                        <img src="images/recent2.jpg" alt="">
+                        <div>
+                            <h1>Header</h1>
+                            <p>Loremdfdf</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-3">
+                    <div>
+                        <img src="images/recent3.jpg" alt="">
+                        <div>
+                            <h1>Header</h1>
+                            <p>Loremdfdf</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-3">
+                    <div>
+                        <img src="images/recent4.jpg" alt="">
+                        <div>
+                            <h1>Header</h1>
+                            <p>Loremdfdf</p>
+                        </div>
+                    </div>
+                </section>
+              </div>   
+        </aside>
 
-            
+        <!--FOOTER-->
 
+        <footer class="container-fluid">
+            <section class="container">
+                <h1>Footer</h1>
+                <div class="row">
+                    <section class="col-lg-4">
+                        <h1>Header</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati non, temporibus sint consequuntur vel expedita omnis sapiente.</p>
+                        <p>Autem nihil expedita mollitia deserunt pariatur consectetur iure animi, laudantium quibusdam, iusto voluptates!</p>
+                    </section>
+                    <section class="col-lg-4">
+                        <h1>Header</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati non, temporibus sint consequuntur vel expedita omnis sapiente.</p>
+                        <p>Autem nihil expedita mollitia deserunt pariatur consectetur iure animi, laudantium quibusdam, iusto voluptates!</p>
+                    </section>
+                    <section class="col-lg-4">
+                        <h1>Header</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati non, temporibus sint consequuntur vel expedita omnis sapiente.</p>
+                        <p>Autem nihil expedita mollitia deserunt pariatur consectetur iure animi, laudantium quibusdam, iusto voluptates!</p>
+                    </section>
+                </div>
+            </section>
         </footer>
-
-
-    </div>
 </body>
 </html>
