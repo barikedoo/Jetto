@@ -1,0 +1,125 @@
+//VARIABLES
+
+@orange: #e8603c;
+@grey: #b9b9b9;
+
+//FONTS
+
+@font-face {
+    font-family: BebasNeue;
+    src: url('../fonts/bebasneue_regular.eot');
+    src: url('../fonts/bebasneue_regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue_regular.woff2') format('woff2'),
+         url('../fonts/bebasneue_regular.woff') format('woff'),
+         url('../fonts/bebasneue_regular.ttf')  format('truetype'),
+         url('../fonts/bebasneue_regular.svg#svgFontName') format('svg'); 
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url('../fonts/helveticaneuecyr-medium.eot');
+    src: url('../fonts/helveticaneuecyr-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-medium.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-medium.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-medium.ttf')  format('truetype'),
+         url('../fonts/helveticaneuecyr-medium.svg#svgFontName') format('svg'); 
+}
+
+// COMMON STYLES
+
+body {
+    font-family: BebasNeue, Arial, sans-serif!important;
+}
+
+p {
+    font-family: HelveticaNeue;
+}
+
+a {
+    color:@orange;
+}
+
+a {
+    color:@orange!important;
+    text-decoration: none!important;
+}
+
+* {
+    outline: none!important;
+}
+
+// NAV BAR main
+
+nav.navbar {
+    border: 0;
+    background: transparent;
+    margin: 0;
+    height: 70px;
+
+    // LOGO
+    h1 {
+        float:left;
+        margin: 0;
+
+        a.navbar-brand {
+            font-size:45px;
+            font-weight:800;
+            margin-top: 5px;
+            letter-spacing: 2px;
+        }
+
+        span {
+                color:lighten(@orange, 25);
+            }    
+    }
+
+
+// MENU
+    ul {
+        li a {
+            line-height: 45px;
+            font-weight: 600;
+            letter-spacing: 1.1px;
+            font-size:20px;
+            color: @grey!important;
+            padding:12px;
+        }
+
+        li.active {
+            a,a:hover {
+                color: @orange!important;
+                background: transparent!important;
+            }
+        }
+
+        li {
+            a:hover {
+                color: @orange!important;
+                background: transparent!important;
+            }
+        }
+    }
+
+    li:last-child a {
+        padding-right: 0px;
+    }
+}
+// SLIDER
+
+#slider {
+    position:relative;
+    
+    #side-stripes{
+        background:lighten(@orange, 25);
+        height: 62px;
+        position: absolute;
+        top: 0;
+        left:0;
+        width:100%;
+        z-index: 5;
+    }
+
+    .container {
+        z-index:10;
+    }
+}

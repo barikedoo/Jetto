@@ -1,0 +1,80 @@
+@font-face {
+  font-family: BebasNeue;
+  src: url('../fonts/bebasneue_regular.eot');
+  src: url('../fonts/bebasneue_regular.eot?#iefix') format('embedded-opentype'), url('../fonts/bebasneue_regular.woff2') format('woff2'), url('../fonts/bebasneue_regular.woff') format('woff'), url('../fonts/bebasneue_regular.ttf') format('truetype'), url('../fonts/bebasneue_regular.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('../fonts/helveticaneuecyr-medium.eot');
+  src: url('../fonts/helveticaneuecyr-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticaneuecyr-medium.woff2') format('woff2'), url('../fonts/helveticaneuecyr-medium.woff') format('woff'), url('../fonts/helveticaneuecyr-medium.ttf') format('truetype'), url('../fonts/helveticaneuecyr-medium.svg#svgFontName') format('svg');
+}
+body {
+  font-family: BebasNeue, Arial, sans-serif !important;
+}
+p {
+  font-family: HelveticaNeue;
+}
+a {
+  color: #e8603c;
+}
+a {
+  color: #e8603c !important;
+  text-decoration: none!important;
+}
+* {
+  outline: none!important;
+}
+nav.navbar {
+  border: 0;
+  background: transparent;
+  margin: 0;
+  height: 70px;
+}
+nav.navbar h1 {
+  float: left;
+  margin: 0;
+}
+nav.navbar h1 a.navbar-brand {
+  font-size: 45px;
+  font-weight: 800;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+nav.navbar h1 span {
+  color: #f5bdae;
+}
+nav.navbar ul li a {
+  line-height: 45px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  font-size: 20px;
+  color: #b9b9b9 !important;
+  padding: 12px;
+}
+nav.navbar ul li.active a,
+nav.navbar ul li.active a:hover {
+  color: #e8603c !important;
+  background: transparent!important;
+}
+nav.navbar ul li a:hover {
+  color: #e8603c !important;
+  background: transparent!important;
+}
+nav.navbar li:last-child a {
+  padding-right: 0px;
+}
+#slider {
+  position: relative;
+}
+#slider #side-stripes {
+  background: #f5bdae;
+  height: 62px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+#slider .container {
+  z-index: 10;
+}
