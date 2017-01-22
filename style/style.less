@@ -48,6 +48,7 @@ a {
     outline: none!important;
 }
 
+
 // NAV BAR main
 
 nav.navbar {
@@ -113,13 +114,139 @@ nav.navbar {
         background:lighten(@orange, 25);
         height: 62px;
         position: absolute;
-        top: 0;
+        top:0;
         left:0;
         width:100%;
-        z-index: 5;
+        z-index: 1;
     }
 
     .container {
         z-index:10;
+        position: relative;
+        background: #fff;
     }
+
+    .carousel-indicators {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        position: static;
+        margin: 0;
+        margin-top: 17px;
+
+
+        li {
+            border: 0;
+            width: 15%;
+            margin: 0;
+            height: auto;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+
+            }
+            li.active {
+                border:2px solid @orange;
+                border-radius: 0;
+        }
+    }
+}
+
+// INTRO ARTICLES
+
+#intro-articles {
+    margin-bottom: 43px;
+
+    h1 {
+         padding-left: 70px;
+         font-size: 22px;
+         font-weight: 600;
+         letter-spacing: 1px;
+         margin-top:37px;
+         margin-bottom: 30px;
+    }
+
+    p {
+        min-height: 120px;
+        line-height: 18px;
+        font-size: 12px;
+        padding-bottom: 22px;
+    }
+
+    button {
+        background: @orange;
+        color:#fff;
+        border: 0;
+        padding: 5px 18px 2px 14px;
+        line-height: 25px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    & article:nth-child(1) h1 {
+        background:url(../images/icon-gear.png) 0 1px no-repeat;
+    }
+    & article:nth-child(2) h1 {
+        background:url(../images/icon-check.png) 0 2px no-repeat;
+    }
+
+    & article:nth-child(3) h1 {
+        background:url(../images/icon-man.png) 0 2px no-repeat;
+    }
+}
+
+// RECENT WORKS
+
+#recent-works {
+    margin-bottom:28px;
+
+    #h1-background {
+        background:url(../images/header_line.png) 0 0 repeat-x;
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        background: #fff;
+        display: inline;
+        font-size:22px;
+        letter-spacing: 1px;
+        padding-right: 21px;
+    }
+
+    #recent-item img {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .recent {
+        margin-bottom: 20px;
+    }
+
+    .recent>div {
+        border: 1px solid lighten(@grey, 15%);
+        border-top:none;
+    }
+
+    h2 {
+        padding: 12px 13px 0px;
+        margin: 0;
+        font-size:20px;
+        letter-spacing: 0.68;
+        
+        a {
+            color: @grey!important;
+        }
+    }
+
+    p {
+        color: @orange;
+        padding: 0 13px;
+        font-size: 13px;
+        letter-spacing: 0.3px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
 }
