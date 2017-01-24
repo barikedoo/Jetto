@@ -153,6 +153,24 @@ nav.navbar {
                 border-radius: 0;
         }
     }
+                .carousel-caption {
+                background: fade(@orange, 80%);
+                margin-left: 37px;
+                left: 0;
+                width: 430px;
+                padding: 25px 11px;
+                text-align: left;
+                font-size: 11px;
+                font-weight: 100px;
+
+                    h1 {
+                        font-size: 23px;
+                        letter-spacing: 2px;
+                        margin-top:0!important;
+                        padding-top:0!important;
+                    }
+
+            }
 }
 
 // INTRO ARTICLES
@@ -203,8 +221,8 @@ nav.navbar {
     margin-bottom:28px;
 
     #h1-background {
-        background:url(../images/header_line.png) 0 0 repeat-x;
-        padding-bottom: 20px;
+        background:url(../images/header_line.png) 0 2px repeat-x;
+        margin: 0 10px 19px 10px;
     }
 
     h1 {
@@ -212,28 +230,31 @@ nav.navbar {
         display: inline;
         font-size:22px;
         letter-spacing: 1px;
+        font-weight: 600;
         padding-right: 21px;
     }
 
     #recent-item img {
         width: 100%;
-        margin-bottom: 5px;
+        // margin-bottom: px;
     }
 
     .recent {
         margin-bottom: 20px;
+        border:none!important;
     }
 
-    .recent>div {
+    .recent>div>div {
         border: 1px solid lighten(@grey, 15%);
         border-top:none;
+       
     }
 
     h2 {
-        padding: 12px 13px 0px;
+        padding: 8px 20px 0px;
         margin: 0;
         font-size:20px;
-        letter-spacing: 0.68;
+        letter-spacing: 1px;
         
         a {
             color: @grey!important;
@@ -242,11 +263,75 @@ nav.navbar {
 
     p {
         color: @orange;
-        padding: 0 13px;
-        font-size: 13px;
-        letter-spacing: 0.3px;
+        padding: 0 18px;
+        font-size: 10px;
+        letter-spacing: 0,5px;
         font-weight: 600;
         text-transform: uppercase;
     }
+
+}
+
+// FOOTER
+
+footer {
+    background: lighten(@orange,25%);
+    color:#fff;
+
+
+    .container {
+        background: #fff;
+        
+        .row {
+            background: @orange;
+            padding: 18px 28px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        h3 {
+            font-size: 24px;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+        }
+        p {
+            line-height: 15px;
+            font-size:12px;
+            margin-bottom: 14px;
+        }
+
+    }
+
+        #twitter span {
+        color:lighten(@orange,25%);
+        font-weight: 100;
+        
+        }
+
+        .social-mixin {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+        }
+
+        #social-fb {
+            .social-mixin;
+        }
+
+        #social-tw {
+            .social-mixin;
+        }
+
+        #social-mail {
+            .social-mixin;
+        }
+
+        #social-rss {
+            .social-mixin;
+        }
+
+        #social-vimeo {
+            .social-mixin;
+        }
 
 }
