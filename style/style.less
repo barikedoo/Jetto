@@ -57,6 +57,10 @@ nav.navbar {
     margin: 0;
     height: 70px;
 
+    @media (max-width:750px) {
+        height: auto;
+    }
+
     // LOGO
     h1 {
         float:left;
@@ -84,7 +88,19 @@ nav.navbar {
             font-size:20px;
             color: @grey!important;
             padding:12px;
+
+            @media (min-width:599px) and (max-width:851px) {
+                padding: 5px;
+                padding-left: 10px;
+                
+            }
+
+            @media (max-width:599px) {
+                line-height: 20px;
+            }
         }
+
+            
 
         li.active {
             a,a:hover {
@@ -109,6 +125,10 @@ nav.navbar {
 
 #slider {
     position:relative;
+
+    @media (max-width:850px) {
+            padding: 0;
+    }
     
     #side-stripes{
         background:lighten(@orange, 25);
@@ -163,6 +183,17 @@ nav.navbar {
                 font-size: 11px;
                 font-weight: 100px;
 
+                    @media (max-width:850px) {
+                        bottom: 0;
+                        max-height: auto;
+                        padding: 6px;
+                        margin-bottom: 0;
+                    }
+
+                    @media (max-width:550px) {
+                        display: none;
+                    }
+
                     h1 {
                         font-size: 23px;
                         letter-spacing: 2px;
@@ -171,6 +202,16 @@ nav.navbar {
                     }
 
             }
+
+        .carousel-control {
+               top:26%;
+               bottom:61%;
+               background: transparent;
+
+               @media (max-width:600px) {
+                   padding: 10px;
+               }
+           }
 }
 
 // INTRO ARTICLES
@@ -185,6 +226,13 @@ nav.navbar {
          letter-spacing: 1px;
          margin-top:37px;
          margin-bottom: 30px;
+
+            @media (max-width:1060px) {
+                height: 48px;
+                margin-top: 30px;
+                margin-bottom: 10px;
+                line-height: 48px;
+            }
     }
 
     p {
@@ -192,6 +240,13 @@ nav.navbar {
         line-height: 18px;
         font-size: 12px;
         padding-bottom: 22px;
+
+        @media (max-width:1060px) {
+                padding-bottom: 0;
+                
+                
+            }
+        
     }
 
     button {
