@@ -129,7 +129,7 @@ nav.navbar li:last-child a {
   margin-left: 37px;
   left: 0;
   width: 430px;
-  padding: 25px 11px;
+  padding: 10px 11px;
   text-align: left;
   font-size: 11px;
   font-weight: 100px;
@@ -140,9 +140,11 @@ nav.navbar li:last-child a {
     max-height: auto;
     padding: 6px;
     margin-bottom: 0;
+    max-width: 100px!important;
+    text-align: center;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   #slider .carousel-caption {
     display: none;
   }
@@ -152,6 +154,11 @@ nav.navbar li:last-child a {
   letter-spacing: 2px;
   margin-top: 0!important;
   padding-top: 0!important;
+}
+@media (max-width: 850px) {
+  #slider .carousel-caption p {
+    display: none;
+  }
 }
 #slider .carousel-control {
   top: 26%;
@@ -176,14 +183,12 @@ nav.navbar li:last-child a {
 }
 @media (max-width: 1060px) {
   #intro-articles h1 {
-    height: 48px;
     margin-top: 30px;
     margin-bottom: 10px;
     line-height: 48px;
   }
 }
 #intro-articles p {
-  min-height: 120px;
   line-height: 18px;
   font-size: 12px;
   padding-bottom: 22px;
@@ -205,11 +210,26 @@ nav.navbar li:last-child a {
 #intro-articles article:nth-child(1) h1 {
   background: url(../images/icon-gear.png) 0 1px no-repeat;
 }
+@media (max-width: 400px) {
+  #intro-articles article:nth-child(1) h1 {
+    background-position-y: 25px;
+  }
+}
 #intro-articles article:nth-child(2) h1 {
   background: url(../images/icon-check.png) 0 2px no-repeat;
 }
+@media (max-width: 436px) {
+  #intro-articles article:nth-child(2) h1 {
+    background-position-y: 25px;
+  }
+}
 #intro-articles article:nth-child(3) h1 {
   background: url(../images/icon-man.png) 0 2px no-repeat;
+}
+@media (max-width: 462px) {
+  #intro-articles article:nth-child(3) h1 {
+    background-position-y: 25px;
+  }
 }
 #recent-works {
   margin-bottom: 28px;
